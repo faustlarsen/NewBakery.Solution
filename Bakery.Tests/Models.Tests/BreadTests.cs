@@ -14,7 +14,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void BreadConstructor_ExceptsAmount_Int()
+    public void BreadConstructor_AcceptsAmount_Int()
     {
     Bread purchase = new Bread(2);
     Assert.AreEqual(true, purchase.AmountOfBread(2));
