@@ -25,7 +25,7 @@ namespace Bakery.Tests
       Pastry purchase = new Pastry(3);
       Dictionary<string, int> value = new Dictionary<string, int> 
       {
-        {"Pastry", 2}
+        {"Pastry", 5}
       };
       CollectionAssert.AreEqual(value, purchase.PastryPrice());
     }
