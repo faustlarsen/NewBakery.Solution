@@ -22,10 +22,10 @@ namespace Bakery.Tests
     [TestMethod]
     public void PastryPrice_AssignCostToPastry_Int()
     {
-      Pastry purchase = new Pastry(3);
+      Pastry purchase = new Pastry(2);
       Dictionary<string, int> value = new Dictionary<string, int> 
       {
-        {"Pastry", 5}
+        {"Pastry", 2}
       };
       CollectionAssert.AreEqual(value, purchase.PastryPrice());
     }
