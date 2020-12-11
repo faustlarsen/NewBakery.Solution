@@ -7,21 +7,20 @@ namespace Bakery.Models
         public int Purchase { get; set; }
         public Bread(int purchase)
         {
-        Purchase = purchase;
+            Purchase = purchase;
         }
-        
-        public bool AmountOfBread()
+            public bool AmountOfBread()
         {
             if (Purchase.GetType() == typeof(int))
             {
-                return true;
+            return true;
             }
             else 
             {
             return true;
             }
         }
-        public Dictionary<string, int> BreadPrice()
+            public Dictionary<string, int> BreadPrice()
         {
             Dictionary<string, int> breadPrice = new Dictionary<string, int>
             {
@@ -29,8 +28,8 @@ namespace Bakery.Models
             };
             return breadPrice;
         }
-        public int BreadPrice(Dictionary<string, int> breadPrice)
-            {
+            public int BreadTotal()
+        {
             int newPurchace = Purchase * 5;
             return newPurchace;
         }
