@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Bakery.Models
 {
     public class Pastry
@@ -8,10 +10,24 @@ namespace Bakery.Models
         {
         Purchase = purchase;
         }
-
         public bool AmountOfPastry()
         {
-        return true;
+            if (Purchase.GetType() == typeof(int))
+            {
+                return true;
+            }
+            else 
+            {
+            return true;
+            }
         }
-    }
-} 
+        public Dictionary<string, int> PastryPrice()
+        {
+            Dictionary<string, int> pastryPrice = new Dictionary<string, int>
+            {
+                {"Pastry", 2}
+            };
+            return pastryPrice;
+        }
+    } 
+}
