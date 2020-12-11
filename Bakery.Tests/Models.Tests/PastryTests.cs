@@ -6,9 +6,6 @@ namespace Bakery.Tests
   [TestClass]
   public class TestPastry
   {
-
-
-    
-
+ 
   }
 }
