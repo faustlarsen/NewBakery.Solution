@@ -17,7 +17,7 @@ namespace Bakery.Models
             }
             else 
             {
-            return true;
+            return false;
             }
         }
             public Dictionary<string, int> PastryPrice()
@@ -27,6 +27,11 @@ namespace Bakery.Models
                 {"Pastry", 2}
             };
             return pastryPrice;
+        }
+            public int PastryTotal()
+        {
+            int newPurchace = Purchase * 2;
+            return newPurchace;
         }
     } 
 }
