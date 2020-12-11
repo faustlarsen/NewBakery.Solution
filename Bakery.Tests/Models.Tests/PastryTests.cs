@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using Bakery.Models;
 
 namespace Bakery.Tests
@@ -12,12 +13,21 @@ namespace Bakery.Tests
     Pastry purchase = new Pastry(2);
     Assert.AreEqual(typeof(Pastry), purchase.GetType());
     }
-
     [TestMethod]
     public void PastryConstructor_AcceptsAmount_Int()
     {
     Pastry purchase = new Pastry(2);
     Assert.AreEqual(true, purchase.AmountOfPastry());
+    }
+    [TestMethod]
+    public void PastryPrice_AssignCostToPastry_Int()
+    {
+      Pastry purchase = new Pastry(3);
+      Dictionary<string, int> value = new Dictionary<string, int> 
+      {
+        {"Pastry", 2}
+      };
+      CollectionAssert.AreEqual(value, purchase.PastryPrice());
     }
   }
 }
