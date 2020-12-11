@@ -10,6 +10,34 @@ This web app is a virtual baked goods store, that offeres bread and pastry. Curr
 
 ### SPECS: ###
 
+1. SPEC: Should welcome the user in the console
+
+**Input**: 
+
+**Output**: "Hello and Welcome to the Pierre's Bakery!"
+____________________________________________________________________________________
+
+2. SPEC: Should offer a list of baked goods and prices and ask what would like to purchase.
+
+**Input**:
+
+**Output**:  Bread: 1 for $5 or buy 2 get 1 free. Pastries: 1 for $2 or 3 for $5
+____________________________________________________________________________________
+
+3. SPEC: Should ask how many loaves of bread and pastries would like to purchase
+
+**Input**: 1 bread and 2 pastries
+
+**Output**: Total is $9.
+____________________________________________________________________________________
+
+4. SPEC: Should ask if would like to purchase more bread or pastry?
+
+**Input**: No
+
+**Output**: Thank you for stopping by.
+____________________________________________________________________________________
+
 
 -  _Open Terminal_
 -  `$ cd ~` - it will navigate to the user's home directory
