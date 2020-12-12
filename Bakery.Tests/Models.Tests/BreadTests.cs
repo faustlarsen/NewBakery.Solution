@@ -8,32 +8,32 @@ namespace Bakery.Tests
     public class TestBread
     {
         [TestMethod]
-            public void BreadConstructor_InstanceOfBread_True()
+        public void BreadConstructor_InstanceOfBread_True()
         {
-            Bread purchase = new Bread(5);
-            Assert.AreEqual(typeof(Bread), purchase.GetType());
+            Bread quantity = new Bread(5);
+            Assert.AreEqual(typeof(Bread), quantity.GetType());
         }
             [TestMethod]
             public void BreadConstructor_AcceptsAmount_Int()
         {
-            Bread purchase = new Bread(5);
-            Assert.AreEqual(true, purchase.AmountOfBread());
+            Bread quantity = new Bread(5);
+            Assert.AreEqual(true, quantity.AmountOfBread());
         }
             [TestMethod]
             public void BreadPrice_AssignPriceToBread_Int()
         {
-            Bread purchase = new Bread(5);
+            Bread quantity = new Bread(5);
             Dictionary<string, int> value = new Dictionary<string, int> 
             {
-              {"Bread", 5}
+            {"Bread", 5}
             };
-            CollectionAssert.AreEqual(value, purchase.BreadPrice());
+            CollectionAssert.AreEqual(value, quantity.BreadPrice());
         }
             [TestMethod]
             public void BreadTotal_ReturnCostOfBread_Int()
         {
             Bread newOrder = new Bread(5);
-            Assert.AreEqual(25, newOrder.BreadTotal());
+            Assert.AreEqual(20, newOrder.BreadTotal());
         }
     } 
 }

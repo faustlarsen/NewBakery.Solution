@@ -4,14 +4,14 @@ namespace Bakery.Models
 {
     public class Bread
     { 
-        public int Purchase { get; set; }
-        public Bread(int purchase)
+        public int Quantity { get; set; }
+        public Bread(int quantity)
         {
-            Purchase = purchase;
+            Quantity = quantity;
         }
             public bool AmountOfBread()
         {
-            if (Purchase.GetType() == typeof(int))
+            if (Quantity.GetType() == typeof(int))
             {
             return true;
             }
@@ -30,14 +30,16 @@ namespace Bakery.Models
         }
             public int BreadTotal()
         {
-            int newPurchace = Purchase * 5;
+            if (Quantity >= 3)
             {
-                if (Purchase % 3 == 0) 
-                {
-                newPurchace -= 5;
-                }
+                int buyTwoGetOneFree = (Quantity * 5) - ((Quantity / 3) * 5);
+                return buyTwoGetOneFree;
             }
-            return newPurchace;
+            else
+            {
+            int newTotal = Quantity * 5;
+            return newTotal;
+            }
         }
     }
 }

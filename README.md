@@ -42,10 +42,15 @@ ________________________________________________________________________________
 -  _Open Terminal_
 -  `$ cd ~` - it will navigate to the user's home directory
 -  `$ cd desktop`- it will navigate to the desktop
--  `$ git clone` ,then copy/paste https://github.com/faustlarsen/Bakery.Solution , then press enter - it will create the file on the desktop
+-  `$ git clone` ,then copy/paste https://github.com/faustlarsen/NewBakery.Solution.Solution , then press enter - it will create the file on the desktop
+-  `$ cd NewBakery.Solution` - it will enter the folder
+-  `$ code .` - it will launch VSCode ( text editor ) to open the file
+-   Install  [.Net Core](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+-  `$ dotnet tool install -g dotnet-script`  - it will instal REPL to run the app
+-  `$ dotnet build` - it will compile the app
+-  `$ cd Bakery` - it will navigate to the launching directory
+-  `$ dotnet run` - it will launch the app in the console
 
-
- 
 ## Known Bugs
 
 ## Support and contact details
