@@ -8,6 +8,10 @@ namespace PierresBakery
     public static void Main()
     {
       Console.WriteLine("Welcome to the Pierre's Bakery!");
+      Menu();
+    }
+    public static void Menu()
+      {
       Console.WriteLine("Would you like to buy some Bread and Pastry?");
       Console.WriteLine("BREAD: 1 for $5 or buy 2 get 1 FREE! PASTRY: 1 for $2 or 3 for $5!");
       Console.WriteLine("How many loaves of bread?");
@@ -18,7 +22,12 @@ namespace PierresBakery
       int pastryAmount = purchasePastry.PastryTotal();
       int total = (breadAmount + pastryAmount);
       Console.WriteLine("Your total is:" + " " + "$" + total);
-      Console.WriteLine("Thank you for stopping by!");
+      Console.WriteLine("Thank you for stopping by! Unless you want some more (type 'y' or 'n')");
+      string response = Console.ReadLine();
+      if (response == "y")
+      {
+        Menu();
+      }
     }
   }
 }
