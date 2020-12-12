@@ -13,22 +13,22 @@ namespace Bakery.Tests
             Bread quantity = new Bread(5);
             Assert.AreEqual(typeof(Bread), quantity.GetType());
         }
-            [TestMethod]
-            public void BreadConstructor_AcceptsAmount_Int()
-        {
-            Bread quantity = new Bread(5);
-            Assert.AreEqual(true, quantity.AmountOfBread());
-        }
-            [TestMethod]
-            public void BreadPrice_AssignPriceToBread_Int()
-        {
-            Bread quantity = new Bread(5);
-            Dictionary<string, int> value = new Dictionary<string, int> 
-            {
-            {"Bread", 5}
-            };
-            CollectionAssert.AreEqual(value, quantity.BreadPrice());
-        }
+        //     [TestMethod]
+        //     public void BreadConstructor_AcceptsAmount_Int()
+        // {
+        //     Bread quantity = new Bread(5);
+        //     Assert.AreEqual(true, quantity.AmountOfBread());
+        // }
+        //     [TestMethod]
+        //     public void BreadPrice_AssignPriceToBread_Int()
+        // {
+        //     Bread quantity = new Bread(5);
+        //     Dictionary<string, int> value = new Dictionary<string, int> 
+        //     {
+        //     {"Bread", 5}
+        //     };
+        //     CollectionAssert.AreEqual(value, quantity.BreadPrice());
+        // }
             [TestMethod]
             public void BreadTotal_ReturnCostOfBread_Int()
         {
