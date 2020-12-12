@@ -9,26 +9,7 @@ namespace Bakery.Models
         {
             Quantity = quantity;
         }
-        //     public bool AmountOfBread()
-        // {
-        //     if (Quantity.GetType() == typeof(int))
-        //     {
-        //     return true;
-        //     }
-        //     else 
-        //     {
-        //     return false;
-        //     }
-        // }
-        //     public Dictionary<string, int> BreadPrice()
-        // {
-        //     Dictionary<string, int> breadPrice = new Dictionary<string, int>
-        //     {
-        //         {"Bread", 5}
-        //     };
-        //     return breadPrice;
-        // }
-            public int BreadTotal()
+        public int BreadTotal()
         {
             if (Quantity >= 3)
             {
