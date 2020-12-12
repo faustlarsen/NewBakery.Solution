@@ -31,6 +31,12 @@ namespace Bakery.Models
             public int BreadTotal()
         {
             int newPurchace = Purchase * 5;
+            {
+                if (Purchase % 3 == 0) 
+                {
+                newPurchace -= 5;
+                }
+            }
             return newPurchace;
         }
     }

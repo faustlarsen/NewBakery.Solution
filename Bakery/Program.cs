@@ -16,8 +16,9 @@ namespace PierresBakery
       Console.WriteLine("And how many pastries?");
       Pastry purchasePastry = new Pastry(int.Parse(Console.ReadLine()));
       int pastryAmount = purchasePastry.PastryTotal();
-      Console.WriteLine("Your total is" + " " + "$" + breadAmount + pastryAmount);
-      Console.WriteLine("Thank you for stopping by.");
+      int total = (breadAmount + pastryAmount);
+      Console.WriteLine("Your total is:" + " " + "$" + total);
+      Console.WriteLine("Thank you for stopping by!");
     }
   }
 }
