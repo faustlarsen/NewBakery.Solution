@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace Bakery.Models
 {
     public class Bread
@@ -18,8 +16,8 @@ namespace Bakery.Models
             }
             else
             {
-            int newTotal = Quantity * 5;
-            return newTotal;
+                int newTotal = Quantity * 5;
+                return newTotal;
             }
         }
     }

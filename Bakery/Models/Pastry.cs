@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace Bakery.Models
 {
     public class Pastry
@@ -9,7 +7,7 @@ namespace Bakery.Models
         {
             Quantity = quantity;
         }
-            public int PastryTotal()
+        public int PastryTotal()
         {
             int newTotal = (Quantity * 2 - (Quantity / 3));
             return newTotal;

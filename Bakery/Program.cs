@@ -3,7 +3,7 @@ using Bakery.Models;
 
 namespace PierresBakery
 {
-  public class Bakery
+  public class Program
   {
     public static void Main()
     { 
@@ -21,7 +21,7 @@ namespace PierresBakery
       System.Threading.Thread.Sleep(3000);
       Menu();
     }
-      public static void Menu()
+    public static void Menu()
     {
       Console.WriteLine("How many loaves of bread? (type a number)");
       Bread purchaseBread = new Bread(int.Parse(Console.ReadLine()));
@@ -34,6 +34,7 @@ namespace PierresBakery
       Console.WriteLine("--------------------");
       Console.WriteLine("Your total is:" + " " + "$" + total);
       Console.WriteLine("--------------------");
+      System.Threading.Thread.Sleep(2000);
       Console.WriteLine("Thank you for stopping by! Unless you want some more? (type 'y' or 'n')");
       string response = Console.ReadLine();
       if (response == "y")
